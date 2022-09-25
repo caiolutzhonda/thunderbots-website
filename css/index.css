@@ -9,4 +9,15 @@
 	top: 20%;
 	letter-spacing: 0.2em;
 }
+#div-wave-1
+{
+	position: relative;
+	width: 100%;
+}
 
+#wave-1
+{
+	position: absolute;
+	bottom: -30px;
+	left: 0px;
+}
