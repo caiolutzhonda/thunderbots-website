@@ -58,8 +58,7 @@ main
 #wave-2
 {
 	position: absolute;
-	transform: scaleY(-1);
+	top: -1px;
 	left: 0px;
-	z-index: -1;
 }
 
