@@ -9,6 +9,27 @@
 	top: 20%;
 	letter-spacing: 0.2em;
 }
+@media screen and (max-width: 991px) {
+  .hide-on-desktop {
+    display: none;
+  }
+  .carousel-caption{
+  	top: 10%;
+  }
+
+
+}
+/*galaxy fold*/
+@media screen and (max-width: 300px) {
+  .hide-on-desktop {
+    display: none;
+  }
+  .carousel-caption{
+  	top: 5%;
+  }
+}
+
+
 #div-wave-1
 {
 	position: relative;
@@ -23,7 +44,22 @@ main
 #wave-1
 {
 	position: absolute;
-
-	bottom: -10px;
+	bottom: -1px;
 	left: 0px;
 }
+
+#div-wave-1
+{
+	position: relative;
+	width: 100%;
+}
+
+
+#wave-2
+{
+	position: absolute;
+	transform: scaleY(-1);
+	left: 0px;
+	z-index: -1;
+}
+
