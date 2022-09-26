@@ -12,12 +12,13 @@
 #div-wave-1
 {
 	position: relative;
-	width: 100vw;
+	width: 100%;
 }
 
 #wave-1
 {
 	position: absolute;
+
 	bottom: -10px;
 	left: 0px;
 }
