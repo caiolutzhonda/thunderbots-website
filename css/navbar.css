@@ -3,3 +3,7 @@
     display: none;
   }
 }
+.navbar
+{
+  backdrop-filter:  blur(2px);
+}
