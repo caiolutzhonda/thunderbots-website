@@ -1,4 +1,8 @@
 
+.hide-on-small
+{
+	display: inherit;
+}
 
 .carousel-inner #background
 {
@@ -6,7 +10,12 @@
 	height: 100%;
 }
 .carousel-caption {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
 	position: absolute;
+	
 	top: -15%;
 	letter-spacing: 0.2em;
 }
@@ -49,11 +58,17 @@ main
   .carousel-caption{
   	top: 30%;
 
+	align-items: center;
+
   }
 }
 @media screen and (max-width: 360px) {
   .carousel-caption{
   	top: 45%;
 
+  }
+  .hide-on-small
+  {
+  	display: none;
   }
 }
