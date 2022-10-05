@@ -1,8 +1,5 @@
 
-header 
-{
-	height: 40vh;
-}
+
 .carousel-inner #background
 {
 	width: 100vw;
@@ -18,6 +15,34 @@ header
 	margin: 0 !important;
 	padding: 0 !important;
 }
+
+
+main 
+{
+	padding:  0 !important;
+	margin: 0;
+}
+
+#div-wave-1
+{
+	position: relative;
+	width: 100%;
+}
+
+#wave-1
+{
+	position: absolute;
+	bottom: -1px;
+	left: 0px;
+
+}
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 991px) {
