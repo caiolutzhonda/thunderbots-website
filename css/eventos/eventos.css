@@ -45,7 +45,7 @@ main
 
 }
 
-.card-title
+.card-title, .card-text
 {
 	font-family: 'Karla', sans-serif;
 	font-weight: 300;
