@@ -64,6 +64,19 @@ main
 	align-items: center;
 
   }
+
+}
+@media screen and (min-width: 991px) {
+  .card-title
+  {
+  	font-size: 35px !important;
+  }
+  .card-text
+  {
+  	font-size: 20px !important;
+  }
+ 
+ 
 }
 @media screen and (max-width: 360px) {
   .carousel-caption{
