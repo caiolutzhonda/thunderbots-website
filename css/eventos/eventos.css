@@ -51,7 +51,10 @@ main
 	font-weight: 300;
 }
 
-
+.card-secundario
+{
+	width: 45%;
+} 
 
 
 
@@ -76,6 +79,14 @@ main
   	font-size: 20px !important;
   }
  
+ 
+}
+
+@media screen and (max-width: 670px) {
+	.card-secundario
+	{
+		width: 90%;
+	} 
  
 }
 @media screen and (max-width: 360px) {
