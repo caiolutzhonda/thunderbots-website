@@ -1,3 +1,3 @@
 # thunderbots-website
-site da equipe thunderbots url: www.thunderbots.com.br
+website da equipe de robótica thunderbots url: www.thunderbots.com.br
 
