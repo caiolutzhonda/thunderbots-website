@@ -1,0 +1,99 @@
+
+.hide-on-small
+{
+	display: inherit;
+}
+
+.carousel-inner #background
+{
+	width: 100vw;
+	height: 100%;
+}
+.carousel-caption {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: -10%;
+	letter-spacing: 0.2em;
+}
+#slides
+{
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.card{
+	width: 20rem;
+}
+
+@media screen and (max-width: 991px) {
+  .carousel-caption{
+  	top: 15%;
+
+  }
+  .card
+  {
+  	width: 14rem;
+  }
+
+}
+.card-text, .card-title
+{
+	font-family: 'Karla', sans-serif;
+}
+.card-text
+{
+	font-weight: 400;
+}
+
+.card-img-top
+{
+	border-radius: 300px;
+	padding: 20px;
+}
+
+.card-body
+{
+	padding-top: 0px;
+}
+
+
+
+@media screen and (max-width: 412px) {
+  .carousel-caption{
+  	top: 45%;
+
+  }
+  .hide-on-small
+{
+	display: none;
+}
+
+
+}
+.remove-margin
+{
+	margin: 0 !important;
+
+}
+main 
+{
+	padding:  0 !important;
+	margin: 0;
+}
+
+#div-wave-1
+{
+	position: relative;
+	width: 100%;
+}
+
+#wave-1
+{
+	position: absolute;
+	bottom: -1px;
+	left: 0px;
+
+}
