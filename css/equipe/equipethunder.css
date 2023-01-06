@@ -48,11 +48,23 @@
 	font-weight: 400;
 }
 
+.wrapper-image
+{
+	padding: 20px;
+	
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -khtml-border-radius: 50%;
+}
+
 .card-img-top
 {
-	border-radius: 100%;
-	padding: 20px;
-
+   -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -khtml-border-radius: 50%;
+    vertical-align: middle;
 }
 
 .card-body
