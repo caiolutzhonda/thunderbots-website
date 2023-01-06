@@ -33,7 +33,7 @@
 }
 
 
-#div-wave-1
+.div-wave
 {
 	position: relative;
 	width: 100%;
@@ -50,13 +50,6 @@ main
 	bottom: -1px;
 	left: 0px;
 }
-
-#div-wave-1
-{
-	position: relative;
-	width: 100%;
-}
-
 
 #wave-2
 {
