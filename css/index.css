@@ -72,6 +72,14 @@ main
   border-radius: 3%;
   -khtml-border-radius: 3%;
 }
+img {
+	 -webkit-border-radius: 3%;
+  -moz-border-radius: 3%;
+  border-radius: 3%;
+  -khtml-border-radius: 3%;
+  vertical-align: middle;
+}
+
 
 
 #div-wave-3
