@@ -26,6 +26,10 @@
   .carousel-caption{
   	top: 5%;
   }
+  #logo-ifmaker
+  {
+  	display: none;
+  }
 }
 
 
@@ -61,11 +65,14 @@ main
 	left: 0px;
 }
 
-.imagem-maker
+.carousel-inner  
 {
-
-	border-radius: 40px;
+  -webkit-border-radius: 3%;
+  -moz-border-radius: 3%;
+  border-radius: 3%;
+  -khtml-border-radius: 3%;
 }
+
 
 #div-wave-3
 {
