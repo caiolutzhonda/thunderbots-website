@@ -13,52 +13,64 @@
   background-image: url('../../images/ingresso/daniel-olah-gEta6dbzFy0-unsplash.png');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: 70vw 0%;
+  background-position: 100% 0%;
 }
 
 
 
 .desc{
+  font-size: 35px;
   opacity: 0.9;
 }
 
 
-
-@media screen and (max-width: 500px) {
+@media (max-width: 575px) {
   .row {
-  background-position: 60vw 0%;
-
-
-  }
-.text{
-    height: 400px;
+    background-position: 60vw 0%;
   }
   .title 
   {
     font-size: 20px;
   }
-
   .desc{
-    font-size: 18px;
+    font-size: 15px;
+
   }
 }
-@media screen and (min-width: 780px) {
-  .title
-  {
-    font-size: 40px;
+
+
+@media (max-width: 767px) and (min-width:  575px){
+    .desc{
+    font-size: 20px;
+
   }
+  .row {
+    background-position: 60vw 0%;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 767px) {
+  .row {
+    background-position: 70vw 0%;
+  }
+    .desc{
+    font-size: 25px;
+
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 991px){
+  .desc{
+    font-size: 30px;
+
+  }
+}
+
+@media (max-width: 1399px) and (min-width: 1199.98px) {
   .desc{
     font-size: 35px;
 
   }
 }
-
-@media screen and (min-width: 1400px) {
-  .row {
-  background-position: 100% 0%;
-  }
-
-}
-
 
 
