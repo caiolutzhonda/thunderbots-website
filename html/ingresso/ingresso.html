@@ -31,7 +31,7 @@
 
 	<title>THUNDERBOTS - INGRESSAR</title>
 </head>
-<body class="bg-black">
+<body>
 	<header>
 		<nav  style=" font-family: 'Bebas Neue', sans-serif;" class="navbar navbar-dark sticky-top fs-4 navbar-expand-lg bg-black p-2 text-white bg-opacity-50 shadow">
 			<div class="container-fluid">
@@ -65,31 +65,60 @@
 	</header>
 	<main>
 		<!-- container -->
-		<div class=" text-white container-xxl">
-			<div class="row align-items-center">
-				<div class="col-10 col-lg-8 d-flex justify-content-center">
+		<div class=" text-white container-lg">
+			<div class="row-1 row align-items-center">
+				<div id="first-div" class="col-8 col-sm-8 col-md-8 col-lg-7 col-xl-8 col-xxl-8 d-flex justify-content-center">
 					<div class="image">
 						<img id="first-arrow" src="../../images/ingresso/arrow1.svg" alt="borda personalizada">
 					</div>
 					<div id="text-1" class="text">
 						<br>
-						<h1 class="text-white overflow-x-visible title">COMECE SUA JORNADA</h1>
-						<p class="desc fst-italic">
+						<h1 id="title-1" class="text-white  title">COMECE SUA JORNADA</h1>
+						<p id="desc-1" class="desc fst-italic">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 						</p>
 					</div>
-					<script>
 
-						let clientHeight = document.getElementById('text-1').clientHeight
-
-						let element = document.getElementById("first-arrow");
-						element.style.height = ''+clientHeight+'px';
-					</script>
 				</div>
-				<div class="col-2 col-lg-4"></div>
+				<div class="col-4 col-sm-4 col-md-4 col-lg-5 col-xl-4 col-xxl-4 "></div>
 			</div>
+			
+			<div class="row-2 row align-items-center">
+				<div class="col-4 col-sm-5 col-md-4 col-lg-5 col-xl-5 col-xxl-5 "></div>
+				
+				<div id="second-div" class="col-8 col-sm-7 col-md-8 col-lg-7 col-xl-7 col-xxl-7 d-flex justify-content-center">
+					<div id="text-2" class="text">
+						<br>
+						<h1 id="title-1" class="text-white text-end  title">COMECE SUA JORNADA</h1>
+						<p id="desc-1" class="desc text-end fst-italic">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						</p>
+					</div>
+					<div class="image">
+						<img id="second-arrow" src="../../images/ingresso/arrow2.svg" alt="borda personalizada">
+					</div>
+				</div>
+
+			</div>
+				<script>
+					let heightSecondArrow = document.getElementById('text-2').clientHeight
+					let elementSecondArrow = document.getElementById("second-arrow");
+					elementSecondArrow.style.height = ''+heightSecondArrow+'px';
+					let heightFirstArrow = document.getElementById('text-1').clientHeight
+					let elementFirstArrow = document.getElementById("first-arrow");
+					
+					elementFirstArrow.style.height = ''+heightFirstArrow+'px';
+				</script>
 
 		</div>
+		<div class="text-white container-lg">
+			<!-- gustavo-boaron-DF1xWYiBnfg-unsplash.png -->
+			<div class="go">
+				<img class="img-fluid" src="../../images/ingresso/gustavo-boaron-DF1xWYiBnfg-unsplash.png">
+				<a href="#">COMEÇAR</a>
+			</div>
+		</div>
+		<div class="span"></div>
 	</main>
 	
 
@@ -97,5 +126,35 @@
 
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+
+
+
+	<script>
+		var body = document.getElementsByTagName('body')[0];
+		body.style.backgroundColor = 'black';
+
+		function unfade(element) {
+		    var op = 0.1;  // initial opacity
+		    element.style.display = 'block';
+		    var timer = setInterval(function () {
+		        if (op >= 1){
+		            clearInterval(timer);
+		        }
+		        element.style.opacity = op;
+		        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+		        op += op * 0.1;
+		    }, 50);
+		}
+		window.onscroll = function (event) {
+        	var scroll = window.pageYOffset;
+	        	if (scroll >= 1200 && scroll < 1800) {
+				body.style.backgroundColor = '#010010';
+				}else{
+					body.style.backgroundColor = 'black';
+				}
+			}
+	</script>
+
 </body>
 </html>

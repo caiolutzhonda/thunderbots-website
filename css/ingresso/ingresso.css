@@ -7,69 +7,142 @@
 }
 
 
+.row-2
+{
+  
+  height: 650px;
+  background-image: url('../../images/ingresso/earth_2_5k___001_by_hameed_d2dflxq.png');
+  background-position: 0% 0%;
 
-.row {
-  height: 800px;
-  background-image: url('../../images/ingresso/daniel-olah-gEta6dbzFy0-unsplash.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 100% 0%;
 }
 
+.row { 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
+.row-1 {
+  height: 650px;
+  background-image: url('../../images/ingresso/daniel-olah-gEta6dbzFy0-unsplash.png');
+  background-position: 100% 0%;
+}
 
 .desc{
   font-size: 35px;
   opacity: 0.9;
 }
 
+.go{
+  position: relative;
+}
+
+.go img{
+  width: 100%;
+  height: auto;
+}
+
+.go a {
+  font-size: 50px;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  backdrop-filter: blur(2px);
+  text-decoration: none;
+  background: radial-gradient(50% 50% at 50% 50%, #B529E1 0%, #24DFF7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
 
 @media (max-width: 575px) {
-  .row {
+  .row-1 {
+      height: 700px;
     background-position: 60vw 0%;
+  }
+  .row-2 {
+    background-position: -65vw center;
   }
   .title 
   {
-    font-size: 20px;
+    font-size: 16px;
   }
   .desc{
     font-size: 15px;
 
   }
+  .span{
+    height: 30vh;
+  }
+  .go a {
+    font-size: 23px;
+  }
 }
 
 
 @media (max-width: 767px) and (min-width:  575px){
-    .desc{
+  .title{
+    font-size: 25px;
+  }
+  .desc{
     font-size: 20px;
 
   }
-  .row {
+  .row-1 {
     background-position: 60vw 0%;
+  }
+  .row-2 {
+    background-position: -35vw 0%;
+  }
+  .go a {
+    font-size: 35px;
   }
 }
 
 @media (max-width: 991px) and (min-width: 767px) {
-  .row {
-    background-position: 70vw 0%;
+  .row-1 {
+    background-position: 60vw 0%;
   }
-    .desc{
+  .row-2 {
+    background-position: -20vw 0%;
+  }
+  .desc{
     font-size: 25px;
 
   }
+  .go a {
+    font-size: 40px;
+  }
+
 }
 
 @media (max-width: 1199px) and (min-width: 991px){
+  .row-2 {
+    background-position: -5vw 0%;
+  }
   .desc{
     font-size: 30px;
 
   }
+    .go a {
+    font-size: 45px;
+  }
 }
 
-@media (max-width: 1399px) and (min-width: 1199.98px) {
+@media (min-width: 1199.98px) {
+  .title
+  {
+    font-size: 30px;
+  }
   .desc{
-    font-size: 35px;
+    font-size: 28px;
 
+  }
+  .go a {
+    font-size: 50px;
   }
 }
 
