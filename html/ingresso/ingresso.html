@@ -31,9 +31,9 @@
 
 	<title>THUNDERBOTS - INGRESSAR</title>
 </head>
-<body>
+<body class="bg-black">
 	<header>
-		<nav  style=" font-family: 'Bebas Neue', sans-serif;" class="navbar navbar-dark sticky-top fs-4 navbar-expand-lg bg-black p-2 text-white bg-opacity-50 shadow">
+		<nav  style=" font-family: 'Bebas Neue', sans-serif;" class="navbar navbar-dark fixed-top fs-4 navbar-expand-lg bg-black p-2 text-white bg-opacity-50 shadow">
 			<div class="container-fluid">
 				<a class="navbar-brand fs-4" href="../../index.html"><img width="140" src="../../images/IFMAKERLOGO.svg" alt="logo do ifmaker"></a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -100,17 +100,12 @@
 				</div>
 
 			</div>
-				<script>
-					let heightSecondArrow = document.getElementById('text-2').clientHeight
-					let elementSecondArrow = document.getElementById("second-arrow");
-					elementSecondArrow.style.height = ''+heightSecondArrow+'px';
-					let heightFirstArrow = document.getElementById('text-1').clientHeight
-					let elementFirstArrow = document.getElementById("first-arrow");
-					
-					elementFirstArrow.style.height = ''+heightFirstArrow+'px';
-				</script>
+			<script>
+
+			</script>
 
 		</div>
+
 		<div class="text-white container-lg">
 			<!-- gustavo-boaron-DF1xWYiBnfg-unsplash.png -->
 			<div class="go">
@@ -119,6 +114,7 @@
 			</div>
 		</div>
 		<div class="span"></div>
+
 	</main>
 	
 
@@ -131,30 +127,27 @@
 
 
 	<script>
-		var body = document.getElementsByTagName('body')[0];
-		body.style.backgroundColor = 'black';
-
 		function unfade(element) {
 		    var op = 0.1;  // initial opacity
 		    element.style.display = 'block';
 		    var timer = setInterval(function () {
-		        if (op >= 1){
-		            clearInterval(timer);
-		        }
-		        element.style.opacity = op;
-		        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-		        op += op * 0.1;
+		    	if (op >= 1){
+		    		clearInterval(timer);
+		    	}
+		    	element.style.opacity = op;
+		    	element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+		    	op += op * 0.1;
 		    }, 50);
 		}
-		window.onscroll = function (event) {
-        	var scroll = window.pageYOffset;
-	        	if (scroll >= 1200 && scroll < 1800) {
-				body.style.backgroundColor = '#010010';
-				}else{
-					body.style.backgroundColor = 'black';
-				}
-			}
-	</script>
 
+
+		let heightSecondArrow = document.getElementById('text-2').clientHeight
+		let elementSecondArrow = document.getElementById("second-arrow");
+		elementSecondArrow.style.height = ''+heightSecondArrow+'px';
+		let heightFirstArrow = document.getElementById('text-1').clientHeight
+		let elementFirstArrow = document.getElementById("first-arrow");
+		
+		elementFirstArrow.style.height = ''+heightFirstArrow+'px';
+	</script>
 </body>
 </html>
