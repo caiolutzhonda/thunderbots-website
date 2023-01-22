@@ -31,8 +31,24 @@
 
 	<title>THUNDERBOTS - INGRESSAR</title>
 </head>
-<body class="bg-black">
+<body onload="loading()" class="bg-black">
+	<script>
+				
+		document.documentElement.addEventListener("load", function(){
+	    document.getElementById("loading-screen").style.display = "block";
+		});
+	</script>
+	<div id="loading-screen">
+		<div>
+			<img width="140" src="../../images/ingresso/hexagon.svg" alt="logo do ifmaker">
+			
+		</div>
+		<div>
+			<p class="fs-3 text-white">carregando...</p>
+		</div>
+	</div>
 	<header>
+		
 		<nav  style=" font-family: 'Bebas Neue', sans-serif;" class="navbar navbar-dark fixed-top fs-4 navbar-expand-lg bg-black p-2 text-white bg-opacity-50 shadow">
 			<div class="container-fluid">
 				<a class="navbar-brand fs-4" href="../../index.html"><img width="140" src="../../images/IFMAKERLOGO.svg" alt="logo do ifmaker"></a>
@@ -62,6 +78,7 @@
 
 			</div>
 		</nav>
+
 	</header>
 	<main>
 		<!-- container -->
@@ -89,8 +106,8 @@
 				<div id="second-div" class="col-8 col-sm-7 col-md-8 col-lg-7 col-xl-7 col-xxl-7 d-flex justify-content-center">
 					<div id="text-2" class="text">
 						<br>
-						<h1 id="title-1" class="text-white text-end  title">COMECE SUA JORNADA</h1>
-						<p id="desc-1" class="desc text-end fst-italic">
+						<h1 id="title-2" class="text-white text-end  title">COMECE SUA JORNADA</h1>
+						<p id="desc-2" class="desc text-end fst-italic">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 						</p>
 					</div>
@@ -107,47 +124,23 @@
 		</div>
 
 		<div class="text-white container-lg">
-			<!-- gustavo-boaron-DF1xWYiBnfg-unsplash.png -->
 			<div class="go">
-				<img class="img-fluid" src="../../images/ingresso/gustavo-boaron-DF1xWYiBnfg-unsplash.png">
+				<img class="img-fluid" src="../../images/ingresso/gustavo-boaron-DF1xWYiBnfg-unsplash.png" alt="botão de começar">
 				<a href="#">COMEÇAR</a>
 			</div>
 		</div>
 		<div class="span"></div>
-
 	</main>
-	
-
-
-
-
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
-
-
-
-	<script>
-		function unfade(element) {
-		    var op = 0.1;  // initial opacity
-		    element.style.display = 'block';
-		    var timer = setInterval(function () {
-		    	if (op >= 1){
-		    		clearInterval(timer);
-		    	}
-		    	element.style.opacity = op;
-		    	element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-		    	op += op * 0.1;
-		    }, 50);
-		}
-
-
-		let heightSecondArrow = document.getElementById('text-2').clientHeight
-		let elementSecondArrow = document.getElementById("second-arrow");
-		elementSecondArrow.style.height = ''+heightSecondArrow+'px';
-		let heightFirstArrow = document.getElementById('text-1').clientHeight
-		let elementFirstArrow = document.getElementById("first-arrow");
-		
-		elementFirstArrow.style.height = ''+heightFirstArrow+'px';
-	</script>
 </body>
+	<script defer>
+
+		window.addEventListener("load", function(){
+		    document.getElementById("loading-screen").style.display = "none";
+		    document.querySelector('header').style.display = "block";
+		});
+
+
+	</script>
 </html>
