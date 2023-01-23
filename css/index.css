@@ -81,3 +81,11 @@ img {
 	width: 100%;
 }
 
+#toast-icon{
+	width: 30px;
+}
+
+.toast-body{
+	font-family: karla;
+	
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>teste</title>
+	<style type="text/css">
+		body {
+			background-color: black;
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.container{
+			position: relative;
+
+			width: 100%;
+			height: 100vh;
+			overflow: hidden;
+		}
+
+		.bubbles {
+			justify-content:space-between;
+
+			display: flex;
+		}
+		.bubbles span{
+			position: relative;
+			width: 10px;
+			height: 10px;
+			background-color: #4fc3dc;
+			margin:  0 4px;
+			border-radius: 50%;
+			box-shadow: 0 0 0 2px #4fc3dc44, 0 0 15px #4fc3dc, 0 0 35px #4fc3dc;
+			animation: animate 15s linear infinite;
+			animation-duration: calc(1000s / var(--i));
+
+		}
+
+		.bubbles span:nth-child(even){
+			background-color: #fff898;
+
+			box-shadow: 0 0 0 2px #fad048, 0 0 15px #c98b21, 0 0 35px #a46a10;
+
+		}
+
+
+		@keyframes animate {
+			0%{
+				transform: translateY(100vh) scale(0);
+			}
+			100%{
+				transform: translateY(-10vh) scale(1);
+			}
+		}
+	</style>
+
+</head>
+<body>
+	<div class="container-1">
+		<div class="bubbles">
+			
+			<span style="--i:23;"></span>
+			<span style="--i:11;"></span>
+			<span style="--i:49;"></span>
+			<span style="--i:29;"></span>
+			<span style="--i:22;"></span>
+			<span style="--i:50;"></span>
+			<span style="--i:8;"></span>
+			<span style="--i:12;"></span>
+			<span style="--i:53;"></span>
+			<span style="--i:84;"></span>
+			<span style="--i:15;"></span>
+			<span style="--i:46;"></span>
+			<span style="--i:67;"></span>
+			<span style="--i:88;"></span>
+			<span style="--i:99;"></span>
+			<span style="--i:23;"></span>
+			<span style="--i:34;"></span>
+			<span style="--i:75;"></span>
+			<span style="--i:12;"></span>
+			<span style="--i:44;"></span>
+			<span style="--i:15;"></span>
+			<span style="--i:67;"></span>
+			<span style="--i:99;"></span>
+			<span style="--i:10;"></span>
+
+		</div>
+	</div>
+
+
+</body>
+</html>

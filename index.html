@@ -13,7 +13,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
 	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 	    <link rel="shortcut icon" href="images/iconified/favicon.ico" type="image/x-icon" >
 		<link rel="apple-touch-icon" href="images/iconified/apple-touch-icon.png" >
 		<link rel="apple-touch-icon" sizes="57x57" href="images/iconified/apple-touch-icon-57x57.png" >
@@ -32,35 +32,32 @@
 	</head>
 	<body class="bg-black">
 		<header>
-				<nav  style=" font-family: 'Bebas Neue', sans-serif;" class="navbar navbar-dark fixed-top fs-4 navbar-expand-lg bg-black p-2 text-white bg-opacity-50 shadow">
-				  <div class="container-fluid">
-				    <a class="navbar-brand fs-4" href="#ifmaker"><img width="140" src="images/IFMAKERLOGO.svg" alt="logo do ifmaker"></a>
-				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				      <span class="navbar-toggler-icon"></span>
-				    </button>
-				    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-				      <ul  class="navbar-nav container d-flex align-items-center justify-content-center">
-				        <li class="mx-2 nav-item ">
-				          <a class="nav-link active" aria-current="page" href="html/eventos/eventoshome.html">EVENTOS</a>
-				        </li>
-				        <li class="nav-item dropdown">
-					        <a  class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-					            PROJETOS
-					        </a>
-					        <ul class="dropdown-menu dropdown-menu-dark">
-					            <li><a class="dropdown-item" href="html/projetos/lego/projetoslegohome.html">LEGO</a></li>
-					            <li><a class="dropdown-item" href="html/projetos/arduino/projetosarduinohome.html">ARDUINO</a></li>
-				          	</ul>
-				        </li>
-				        <li class="nav-item ">
-				          <a class="nav-link active" aria-current="page" href="html/equipe/equipethunder.html">CONHEÇA A EQUIPE</a>
-				        </li>
-				      </ul>
-				    </div>
-				    	<a class="navbar-brand hide-on-desktop fs-4" href="html/equipe/equipethunder.html"><img src="images/thunderbotslogo.svg" alt="logo da equipe thunderbots" height="52"></a>
+		<nav  style=" font-family: 'Bebas Neue', sans-serif;" class="navbar navbar-dark fixed-top fs-4 navbar-expand-lg bg-black p-2 text-white bg-opacity-50 shadow">
+			<div class="container-fluid">
+				<a class="navbar-brand fs-4" href="#"><img width="140" src="images/IFMAKERLOGO.svg" alt="logo do ifmaker"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul  class="navbar-nav container d-flex align-items-center justify-content-center">
+						<li class="mx-2 nav-item ">
+							<a class="nav-link active" aria-current="page" href="html/eventos/eventoshome.html">EVENTOS</a>
+						</li>
+						<li class="mx-2 nav-item ">
 
-				  </div>
-				</nav>
+							<a class="nav-link active" aria-current="page" href="html/ingresso/ingresso.html"><u>INGRESSAR</u></a>
+
+						</li>
+						<li class="nav-item ">
+							<a class="nav-link active" aria-current="page" href="html/equipe/equipethunder.html">CONHEÇA A EQUIPE</a>
+						</li>
+					</ul>
+				</div>
+				<a class="navbar-brand hide-on-desktop fs-4" href="html/equipe/equipethunder.html"><img src="images/thunderbotslogo.svg" alt="logo da equipe thunder" height="52"></a>
+
+			</div>
+		</nav>
 				<div id="slides" class="mt-5 carousel slide" data-ride="carousel">
 					<div class="carousel-inner">
 						<div class="carousel-item active">
@@ -73,8 +70,14 @@
 						</div>
 					</div>
 				</div>
+
 		</header>
 		<main class="container-fluid">
+
+
+
+
+
 			<div class="div-wave">
 				<svg id="wave-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250"><path fill="#f8f9fA" fill-opacity="1" d="M0,224L80,192C160,160,320,96,480,101.3C640,107,800,181,960,181.3C1120,181,1280,107,1360,69.3L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
 			</div>
@@ -140,6 +143,7 @@
 			<div class="div-wave">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#f8f9fA" fill-opacity="1" d="M0,192L48,192C96,192,192,192,288,176C384,160,480,128,576,112C672,96,768,96,864,106.7C960,117,1056,139,1152,133.3C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 			</div>
+
 			<div class="wrapper-container bg-light">
 				<div class="container">
 					<div class="row p-5">
@@ -176,6 +180,21 @@
 							  </button>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+			<div class="toast-container position-fixed bottom-0 end-0 p-3">
+				<div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+					<div class="toast-header">
+						<img id="toast-icon" src="images/iconified/favicon.ico" class="rounded me-2" alt="...">
+						<strong class="me-auto">Thunderbots</strong>
+						<small class="text-muted">Agora mesmo</small>
+						<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+					</div>
+					<div class="toast-body fs-6">
+						<p class="m-0">Olá estudante! Nosso período de inscrições está aberto, venha fazer parte da nossa equipe 🚀<p>
+						<button type="button" class="btn btn-primary my-1"><a class="text-decoration-none  text-white" href="html/ingresso/ingresso.html">Ingressar <i class="bi bi-arrow-up-right-square"></i></a></button>
+
 					</div>
 				</div>
 			</div>

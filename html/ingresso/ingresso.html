@@ -31,24 +31,31 @@
 
 	<title>THUNDERBOTS - INGRESSAR</title>
 </head>
-<body onload="loading()" class="bg-black">
+<body class="bg-black">
 	<script>
-				
+
 		document.documentElement.addEventListener("load", function(){
 	    document.getElementById("loading-screen").style.display = "block";
 		});
+		setTimeout(function() {
+		    document.getElementById('loading-screen-text').innerHTML += '<button class="btn btn-primary" ><a class="text-decoration-none  text-white" href="">Não está carregando?</a></button>';
+		}, 4000);
 	</script>
 	<div id="loading-screen">
 		<div>
 			<img width="140" src="../../images/ingresso/hexagon.svg" alt="logo do ifmaker">
 			
 		</div>
-		<div>
-			<p class="fs-3 text-white">carregando...</p>
+		<div id="loading-screen-text" class="d-flex flex-column align-items-center">
+			<p class="fs-3 text-white">carregando...
+			</p>
+			
+	
 		</div>
+
 	</div>
 	<header>
-		
+
 		<nav  style=" font-family: 'Bebas Neue', sans-serif;" class="navbar navbar-dark fixed-top fs-4 navbar-expand-lg bg-black p-2 text-white bg-opacity-50 shadow">
 			<div class="container-fluid">
 				<a class="navbar-brand fs-4" href="../../index.html"><img width="140" src="../../images/IFMAKERLOGO.svg" alt="logo do ifmaker"></a>
@@ -60,14 +67,10 @@
 						<li class="mx-2 nav-item ">
 							<a class="nav-link active" aria-current="page" href="../eventos/eventoshome.html">EVENTOS</a>
 						</li>
-						<li class="nav-item dropdown">
-							<a  class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								PROJETOS
-							</a>
-							<ul class="dropdown-menu dropdown-menu-dark">
-								<li><a class="dropdown-item" href="../../html/projetos/lego/projetoslegohome.html">LEGO</a></li>
-								<li><a class="dropdown-item" href="../../html/projetos/lego/projetoslegohome.html">ARDUINO</a></li>
-							</ul>
+						<li class="mx-2 nav-item ">
+
+							<a class="nav-link active" aria-current="page" href="#"><u>INGRESSAR</u></a>
+
 						</li>
 						<li class="nav-item ">
 							<a class="nav-link active" aria-current="page" href="../../html/equipe/equipethunder.html">CONHEÇA A EQUIPE</a>
@@ -82,7 +85,7 @@
 	</header>
 	<main>
 		<!-- container -->
-		<div class=" text-white container-lg">
+		<div  class=" text-white container-lg">
 			<div class="row-1 row align-items-center">
 				<div id="first-div" class="col-8 col-sm-8 col-md-8 col-lg-7 col-xl-8 col-xxl-8 d-flex justify-content-center">
 					<div class="image">
@@ -92,23 +95,22 @@
 						<br>
 						<h1 id="title-1" class="text-white  title">COMECE SUA JORNADA</h1>
 						<p id="desc-1" class="desc fst-italic">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							Estamos à procura de pessoas questionadoras, com uma enorme vontade de aprender, curta pôr a mão na massa e que tenha disponibilidade para cumprir os desafios cotidianos da equipe. 
 						</p>
 					</div>
 
 				</div>
 				<div class="col-4 col-sm-4 col-md-4 col-lg-5 col-xl-4 col-xxl-4 "></div>
 			</div>
-			
-			<div class="row-2 row align-items-center">
+			<div  class="row-2 row align-items-center">
 				<div class="col-4 col-sm-5 col-md-4 col-lg-5 col-xl-5 col-xxl-5 "></div>
 				
 				<div id="second-div" class="col-8 col-sm-7 col-md-8 col-lg-7 col-xl-7 col-xxl-7 d-flex justify-content-center">
 					<div id="text-2" class="text">
 						<br>
-						<h1 id="title-2" class="text-white text-end  title">COMECE SUA JORNADA</h1>
+						<h1 id="title-2" class="text-white text-end  title">APRENDA A PENSAR FORA DA CAIXA</h1>
 						<p id="desc-2" class="desc text-end fst-italic">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							Desenvolva habilidades de <u>resolução de problemas</u>, criatividade, determinação e trabalho em equipe. Aprenda a pensar fora da caixa, resolver problemas do mundo real e <u>trabalhar em conjunto</u> para alcançar objetivos.
 						</p>
 					</div>
 					<div class="image">
@@ -117,16 +119,13 @@
 				</div>
 
 			</div>
-			<script>
-
-			</script>
 
 		</div>
 
 		<div class="text-white container-lg">
 			<div class="go">
-				<img class="img-fluid" src="../../images/ingresso/gustavo-boaron-DF1xWYiBnfg-unsplash.png" alt="botão de começar">
-				<a href="#">COMEÇAR</a>
+				<img id="comecar-img" class="img-fluid" src="../../images/ingresso/gustavo-boaron-DF1xWYiBnfg-unsplash.png" alt="botão de começar">
+				<a href="inscricao.html">COMEÇAR</a>
 			</div>
 		</div>
 		<div class="span"></div>
@@ -135,12 +134,43 @@
 
 </body>
 	<script defer>
+		function unfade(element, time) {
+		    var op = 0.1;  // initial opacity
+		    element.style.display = 'block';
+		    var timer = setInterval(function () {
+		        if (op >= 1){
+		            clearInterval(timer);
+		        }
+		        element.style.opacity = op;
+		        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+		        op += op * 0.1;
+		    	if (op >= 1){
+		    		clearInterval(timer);
+		    	}
+		    	element.style.opacity = op;
+		    	element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+		    	op += op * 0.1;
+		    }, time);
+		}
+		let first_image = document.getElementById('first-arrow');
+		let first_text = document.getElementById('text-1');
 
 		window.addEventListener("load", function(){
 		    document.getElementById("loading-screen").style.display = "none";
 		    document.querySelector('header').style.display = "block";
-		});
+		    document.querySelector('body').style.overflow = "scroll";
+		    unfade(first_image, 50)
 
+		    unfade(first_text, 50)
+
+
+		});
+		
+
+
+
+
+		
 
 	</script>
 </html>
