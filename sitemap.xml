@@ -9,32 +9,32 @@
 
 <url>
   <loc>https://thunderbots.com.br/</loc>
-  <lastmod>2023-01-04T22:33:37+00:00</lastmod>
+  <lastmod>2023-01-24T00:34:21+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://thunderbots.com.br/html/eventos/eventoshome.html</loc>
-  <lastmod>2023-01-04T22:33:37+00:00</lastmod>
+  <lastmod>2023-01-24T00:34:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://thunderbots.com.br/html/projetos/lego/projetoslegohome.html</loc>
-  <lastmod>2023-01-04T22:33:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://thunderbots.com.br/html/projetos/arduino/projetosarduinohome.html</loc>
-  <lastmod>2023-01-04T22:33:37+00:00</lastmod>
+  <loc>https://thunderbots.com.br/html/ingresso/ingresso.html</loc>
+  <lastmod>2023-01-24T00:34:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://thunderbots.com.br/html/equipe/equipethunder.html</loc>
-  <lastmod>2023-01-04T22:33:37+00:00</lastmod>
+  <lastmod>2023-01-24T00:34:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://thunderbots.com.br/index.html</loc>
-  <lastmod>2023-01-04T22:33:37+00:00</lastmod>
+  <lastmod>2023-01-24T00:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://thunderbots.com.br/html/ingresso/inscricao.html</loc>
+  <lastmod>2023-01-24T00:34:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
