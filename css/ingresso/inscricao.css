@@ -28,9 +28,8 @@ body {
 }
 
 .bubbles {
+		display: flex;
 	justify-content:space-between;
-
-	display: flex;
 }
 .bubbles span{
 	position: relative;
@@ -56,8 +55,11 @@ body {
 @keyframes animate {
 	0%{
 		transform: translateY(100vh) scale(0);
+		-webkit-transform: translateY(100vh) scale(0);
 	}
 	100%{
 		transform: translateY(-10vh) scale(1);
+		-webkit-transform: translateY(-10vh) scale(1);
+
 	}
 }
