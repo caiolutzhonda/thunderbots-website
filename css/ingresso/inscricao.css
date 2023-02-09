@@ -10,11 +10,12 @@ iframe{
 	position: absolute;
 	top: 18%;
 	width: 100vw;
-	height: 100vh;
+	height: 90vh;
 	z-index: 99;
 }
 
 body {
+	overflow-x: hidden;
 	background-color: black;
 	margin: 0;
 	padding: 0;
